@@ -26,6 +26,7 @@ class Solution:
     """
 
     def three_sum(self, nums: List[int]) -> List[List[int]]:
+        """time complexity: O(n^2) space complexity: O(n)"""
         nums = sorted(enumerate(nums), key=lambda x: x[1])
         results = set()
         for i in range(len(nums)):
